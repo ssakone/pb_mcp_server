@@ -432,20 +432,6 @@ The `send_custom_request` tool supports multiple authentication methods:
 }
 ```
 
-### Advanced Analytics Query
-```json
-{
-  "method": "GET",
-  "endpoint": "/api/collections/analytics/records",
-  "queryParams": {
-    "filter": "date > '2024-01-01' && event_type='user_action'",
-    "sort": "-date",
-    "groupBy": "event_type",
-    "having": "count(*) > 10"
-  }
-}
-```
-
 ## Common Parameters
 
 Most tools accept these optional parameters:
